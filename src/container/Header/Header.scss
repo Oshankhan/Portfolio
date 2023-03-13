@@ -1,0 +1,142 @@
+.img__div{
+    
+    background-image: url(../../assets/IMG.jpg);
+    height: 300px;
+    width: 300px;
+    justify-self: center;
+    background-size: cover;
+    border-radius: 50%;
+    animation: profile__animation 8s ease-in-out infinite 1s;
+    margin: 0 100px;
+    
+}
+
+@keyframes profile__animation {
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30 70 40;
+    } 
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }   
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30 70 40;
+    }    
+
+}
+
+.app__header{
+    padding-top: 8rem;
+}
+.small__icon-div{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    flex-direction: column;
+    margin-right: 100px;   
+}
+
+@media screen and (max-width:900px) {
+    .small__icon-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25;
+        flex-direction: row;
+        
+        
+        
+        
+    }
+    
+}
+.small__icons:nth-last-child(1){
+    div{
+        height: 37px;
+        width: 37px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    img{
+        
+        height: 35px;
+        width: 35px;
+    }
+        
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.small__icons:nth-last-child(2){
+    @media screen and (min-width:900px){
+        margin: 50px 0;
+        position: relative;
+        bottom: 20px;
+        left: 25px;
+    }
+    div{
+        height: 77px;
+        width: 77px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 20px;
+
+    }
+    img{
+
+        height: 70px;
+        width: 70px;
+    }
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 50px;
+}
+
+.small__icons:nth-last-child(3){
+    
+    div{
+        height: 45px;
+        width: 45px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    img{
+
+        height: 40px;
+        width: 40px;
+    }
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title__profile-img{
+    margin-top: 25px;
+    
+    
+}
+@media screen and (min-width:900px){ 
+
+    .app__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+}
+.app__header-info{
+    margin-left: 100px;
+}
+
