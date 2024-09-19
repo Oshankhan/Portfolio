@@ -23,8 +23,7 @@ function Header() {
             <span>👋</span>
           </div>
           <div className="tag-cmp app__flex">
-            <p className="p-text">Web Developer</p>
-            <p className="p-text">Flutter Developer</p>
+            <p className="p-text">Web Developer / Flutter Developer</p>
           </div>
         </div>
       </motion.div>
@@ -38,7 +37,7 @@ function Header() {
       </motion.div>
 
       <div className="small__icon-div">
-        {[images.flutter, images.redux, images.sass].map((item) => (
+        {[images.react, images.redux, images.node].map((item) => (
           <motion.div
             key={item}
             className="small__icons"
@@ -55,4 +54,4 @@ function Header() {
   );
 }
 
-export default AppWrap(Header,"home");
+export default AppWrap(Header, "home");

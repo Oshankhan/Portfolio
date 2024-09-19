@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { urlFor, client } from "../../client";
 import "./Skills.scss";
 import AppWrap from "../../Wapper/AppWrap";
-import * as ReactTooltip from "react-tooltip";
 
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
@@ -33,7 +32,7 @@ const Skills = () => {
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
               className="app__skills-item app__flex"
-              key={skill.name}
+              key={skill._id}
             >
               <div
                 className="app__flex"
@@ -52,7 +51,7 @@ const Skills = () => {
                 <p className="bold-text">{experience.year}</p>
               </div>
               <motion.div className="app__skills-exp-works">
-                {experience.works.map((work, index) => (
+                {experience.works.map((work) => (
                   <>
                     <motion.div
                       whileInView={{ opacity: [0, 1] }}
@@ -60,12 +59,12 @@ const Skills = () => {
                       className="app__skills-exp-work"
                       data-tip
                       data-for={work.name}
-                      key={work.name + index}
+                      key={work.name}
                     >
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
+                      <p className="light">{work.desc}</p>
                     </motion.div>
-                    <ReactTooltip></ReactTooltip>
                   </>
                 ))}
               </motion.div>

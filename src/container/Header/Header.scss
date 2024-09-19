@@ -1,13 +1,13 @@
 .img__div{
     
     background-image: url(../../assets/IMG.jpg);
-    height: 300px;
-    width: 300px;
+    height: 252px;
+    width: 240px;
     justify-self: center;
     background-size: cover;
     border-radius: 50%;
     animation: profile__animation 8s ease-in-out infinite 1s;
-    margin: 0 100px;
+    margin: 0 70px;
     
 }
 
@@ -25,7 +25,8 @@
 }
 
 .app__header{
-    padding-top: 8rem;
+    padding-top: 5vh;
+    width: 100%;
 }
 .small__icon-div{
     display:  flex;
@@ -123,6 +124,7 @@
 }
 
 .title__profile-img{
+    margin-bottom: 120px;
     margin-top: 25px;
     
     

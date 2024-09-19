@@ -13,7 +13,6 @@ function Work() {
 
   useEffect(() => {
     const query = '*[_type == "works"]';
-
     client.fetch(query).then((data) => {
       setWorks(data);
       setFilterWork(data);
